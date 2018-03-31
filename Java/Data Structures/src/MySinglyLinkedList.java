@@ -3,11 +3,11 @@
  * @author deca
  *
  */
-public class MyLinkedList {
+public class MySinglyLinkedList {
 	
 	private Node head;
 
-	public MyLinkedList() {
+	public MySinglyLinkedList() {
 		this.head = null;
 	}
 	
@@ -24,17 +24,19 @@ public class MyLinkedList {
 		return head;
 	}
 
-	public class Node {
-		int data;
-		Node next;
-		public Node(int data) {
-			this.data = data;
-			this.next = null;
-		}
+	// Just for testing.
+	public static void main(String[] args) {
+		
+	}
+}
+
+class Node {
+	int data;
+	Node next;
+	
+	public Node(int data) {
+		this.data = data;
+		this.next = null;
 	}
 	
-	public static void main(String[] args) {
-		MyLinkedList test = new MyLinkedList();
-		System.out.println(test);
-	}
 }
