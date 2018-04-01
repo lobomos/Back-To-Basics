@@ -14,7 +14,7 @@ public class MySingleLinkedList {
             this.size++;
         }
         else {
-            Node temp = head;
+            Node temp = this.head;
             while(temp.next != null) {
                 temp = temp.next;
             }
