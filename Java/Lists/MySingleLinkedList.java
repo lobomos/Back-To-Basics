@@ -52,12 +52,13 @@ public class MySingleLinkedList {
         String output = "";
         Node temp = this.head;
         if(temp == null) {
-            return "";
+            return output;
         }
         while(temp.next != null) {
             output += temp.data + " ";
             temp = temp.next;
         }
+        // This avoids having an additional space on the end.
         output += temp.data;
         return output;
     }
